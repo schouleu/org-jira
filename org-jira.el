@@ -440,6 +440,7 @@ to you, but you can customize jql with a prefix argument. See
 
                                 (insert (replace-regexp-in-string "^" "  " (org-jira-get-issue-val heading-entry issue))))))
                           '(description))
+		    (insert "\n")
                     (org-jira-update-comments-for-current-issue)
                     )))))
           issues)
